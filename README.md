@@ -79,6 +79,16 @@ Nothing else left to do, just go on and deploy your app :
 clever deploy
 ```
 
+Note :
+
+If deployement failed with some error like : 
+
+```bash
+django.db.utils.OperationalError: could not translate host name "XXXXXXXXXX-postgresql.services.clever-cloud.com" to address: Name or service not known
+```
+
+It only means that you deployed too quickly after creating the PG add-on and name propagation has not yet been done. Wait a bit and try again later.
+
 ### URL
 
 Your application automatically has a domain pointing to it. You can obtain it though :
