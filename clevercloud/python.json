@@ -1,5 +1,12 @@
 {
-	"deploy": {
-		"module":"cc_django.wsgi:application"
-	}
+    "build": {
+        "cache_dependancies": true
+    },
+    "deploy": {
+        "module": "common.wsgi:application",
+        "managetasks": [
+            "collectstatic --noinput",
+            "migrate"
+        ]
+    }
 }

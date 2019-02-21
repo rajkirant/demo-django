@@ -1,16 +1,16 @@
 """
-WSGI config for cc_django project.
+WSGI config for common project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
+https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
 """
 
 import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "cc_django.settings")
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'common.settings')
 
 application = get_wsgi_application()
